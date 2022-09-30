@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-30T11:30:38.141Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="wQCT8GzhF6jVs4I0I0Vf" version="20.3.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-30T11:36:09.422Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="fCU8ymcxyQaksvniWLjc" version="20.3.7" type="github">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
     <mxGraphModel dx="1185" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -16,11 +16,83 @@
         <mxCell id="XfpYDpdXQri-Tg0kvGUm-8" value="Power &lt;br&gt;↑" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="520" y="320" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="XfpYDpdXQri-Tg0kvGUm-9" value="Power &lt;br&gt;↑↑" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="XfpYDpdXQri-Tg0kvGUm-9" value="Power &lt;br&gt;↑" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="120" y="320" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="XfpYDpdXQri-Tg0kvGUm-10" value="Accuracy &lt;br&gt;↓" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="320" y="480" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XfpYDpdXQri-Tg0kvGUm-12" value="Yes&lt;br&gt;No" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="330" y="160" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XfpYDpdXQri-Tg0kvGUm-13" value="DRAM&lt;br&gt;SRAM" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="430" y="230" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XfpYDpdXQri-Tg0kvGUm-15" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="XfpYDpdXQri-Tg0kvGUm-12" target="XfpYDpdXQri-Tg0kvGUm-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="230" as="sourcePoint" />
+            <mxPoint x="470" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XfpYDpdXQri-Tg0kvGUm-22" value="Yes and DRAM" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XfpYDpdXQri-Tg0kvGUm-15">
+          <mxGeometry x="-0.165" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XfpYDpdXQri-Tg0kvGUm-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="XfpYDpdXQri-Tg0kvGUm-12" target="XfpYDpdXQri-Tg0kvGUm-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="310" as="sourcePoint" />
+            <mxPoint x="380" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XfpYDpdXQri-Tg0kvGUm-23" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XfpYDpdXQri-Tg0kvGUm-16">
+          <mxGeometry x="-0.2038" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XfpYDpdXQri-Tg0kvGUm-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="XfpYDpdXQri-Tg0kvGUm-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="370" as="sourcePoint" />
+            <mxPoint x="390" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XfpYDpdXQri-Tg0kvGUm-24" value="DRAM" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XfpYDpdXQri-Tg0kvGUm-17">
+          <mxGeometry x="-0.3435" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XfpYDpdXQri-Tg0kvGUm-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XfpYDpdXQri-Tg0kvGUm-13" target="XfpYDpdXQri-Tg0kvGUm-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="370" as="sourcePoint" />
+            <mxPoint x="470" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XfpYDpdXQri-Tg0kvGUm-25" value="SRAM" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XfpYDpdXQri-Tg0kvGUm-18">
+          <mxGeometry x="0.2385" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XfpYDpdXQri-Tg0kvGUm-19" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="XfpYDpdXQri-Tg0kvGUm-2" target="XfpYDpdXQri-Tg0kvGUm-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="420" as="sourcePoint" />
+            <mxPoint x="470" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XfpYDpdXQri-Tg0kvGUm-27" value="Reduce memory access" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XfpYDpdXQri-Tg0kvGUm-19">
+          <mxGeometry x="-0.1979" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XfpYDpdXQri-Tg0kvGUm-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XfpYDpdXQri-Tg0kvGUm-8" target="XfpYDpdXQri-Tg0kvGUm-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="370" as="sourcePoint" />
+            <mxPoint x="470" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XfpYDpdXQri-Tg0kvGUm-26" value="Compress for on chip" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XfpYDpdXQri-Tg0kvGUm-20">
+          <mxGeometry x="-0.2187" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
